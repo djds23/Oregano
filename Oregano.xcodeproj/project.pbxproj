@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B25E1B9239DAE3A0066BF7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1B8239DAE3A0066BF7B /* AppDelegate.swift */; };
+		7B25E1BB239DAE3A0066BF7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1BA239DAE3A0066BF7B /* SceneDelegate.swift */; };
+		7B25E1BD239DAE3A0066BF7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1BC239DAE3A0066BF7B /* ViewController.swift */; };
+		7B25E1C0239DAE3A0066BF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B25E1BE239DAE3A0066BF7B /* Main.storyboard */; };
+		7B25E1C2239DAE3C0066BF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B25E1C1239DAE3C0066BF7B /* Assets.xcassets */; };
+		7B25E1C5239DAE3C0066BF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */; };
+		7B25E1D0239DAE3D0066BF7B /* OreganoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1CF239DAE3D0066BF7B /* OreganoTests.swift */; };
+		7B25E1DB239DAE3D0066BF7B /* OreganoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B25E1CC239DAE3D0066BF7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B25E1AD239DAE3A0066BF7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B25E1B4239DAE3A0066BF7B;
+			remoteInfo = Oregano;
+		};
+		7B25E1D7239DAE3D0066BF7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B25E1AD239DAE3A0066BF7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B25E1B4239DAE3A0066BF7B;
+			remoteInfo = Oregano;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B25E1B5239DAE3A0066BF7B /* Oregano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oregano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B25E1B8239DAE3A0066BF7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B25E1BA239DAE3A0066BF7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B25E1BC239DAE3A0066BF7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B25E1BF239DAE3A0066BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B25E1C1239DAE3C0066BF7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B25E1C4239DAE3C0066BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B25E1C6239DAE3C0066BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B25E1CB239DAE3D0066BF7B /* OreganoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OreganoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B25E1CF239DAE3D0066BF7B /* OreganoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OreganoTests.swift; sourceTree = "<group>"; };
+		7B25E1D1239DAE3D0066BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B25E1D6239DAE3D0066BF7B /* OreganoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OreganoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OreganoUITests.swift; sourceTree = "<group>"; };
+		7B25E1DC239DAE3D0066BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B25E1B2239DAE3A0066BF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1C8239DAE3D0066BF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1D3239DAE3D0066BF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B25E1AC239DAE3A0066BF7B = {
+			isa = PBXGroup;
+			children = (
+				7B25E1B7239DAE3A0066BF7B /* Oregano */,
+				7B25E1CE239DAE3D0066BF7B /* OreganoTests */,
+				7B25E1D9239DAE3D0066BF7B /* OreganoUITests */,
+				7B25E1B6239DAE3A0066BF7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B25E1B6239DAE3A0066BF7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B25E1B5239DAE3A0066BF7B /* Oregano.app */,
+				7B25E1CB239DAE3D0066BF7B /* OreganoTests.xctest */,
+				7B25E1D6239DAE3D0066BF7B /* OreganoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B25E1B7239DAE3A0066BF7B /* Oregano */ = {
+			isa = PBXGroup;
+			children = (
+				7B25E1B8239DAE3A0066BF7B /* AppDelegate.swift */,
+				7B25E1BA239DAE3A0066BF7B /* SceneDelegate.swift */,
+				7B25E1BC239DAE3A0066BF7B /* ViewController.swift */,
+				7B25E1BE239DAE3A0066BF7B /* Main.storyboard */,
+				7B25E1C1239DAE3C0066BF7B /* Assets.xcassets */,
+				7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */,
+				7B25E1C6239DAE3C0066BF7B /* Info.plist */,
+			);
+			path = Oregano;
+			sourceTree = "<group>";
+		};
+		7B25E1CE239DAE3D0066BF7B /* OreganoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B25E1CF239DAE3D0066BF7B /* OreganoTests.swift */,
+				7B25E1D1239DAE3D0066BF7B /* Info.plist */,
+			);
+			path = OreganoTests;
+			sourceTree = "<group>";
+		};
+		7B25E1D9239DAE3D0066BF7B /* OreganoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */,
+				7B25E1DC239DAE3D0066BF7B /* Info.plist */,
+			);
+			path = OreganoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B25E1B4239DAE3A0066BF7B /* Oregano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B25E1DF239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "Oregano" */;
+			buildPhases = (
+				7B25E1B1239DAE3A0066BF7B /* Sources */,
+				7B25E1B2239DAE3A0066BF7B /* Frameworks */,
+				7B25E1B3239DAE3A0066BF7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oregano;
+			productName = Oregano;
+			productReference = 7B25E1B5239DAE3A0066BF7B /* Oregano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B25E1CA239DAE3D0066BF7B /* OreganoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B25E1E2239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "OreganoTests" */;
+			buildPhases = (
+				7B25E1C7239DAE3D0066BF7B /* Sources */,
+				7B25E1C8239DAE3D0066BF7B /* Frameworks */,
+				7B25E1C9239DAE3D0066BF7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B25E1CD239DAE3D0066BF7B /* PBXTargetDependency */,
+			);
+			name = OreganoTests;
+			productName = OreganoTests;
+			productReference = 7B25E1CB239DAE3D0066BF7B /* OreganoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B25E1D5239DAE3D0066BF7B /* OreganoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B25E1E5239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "OreganoUITests" */;
+			buildPhases = (
+				7B25E1D2239DAE3D0066BF7B /* Sources */,
+				7B25E1D3239DAE3D0066BF7B /* Frameworks */,
+				7B25E1D4239DAE3D0066BF7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B25E1D8239DAE3D0066BF7B /* PBXTargetDependency */,
+			);
+			name = OreganoUITests;
+			productName = OreganoUITests;
+			productReference = 7B25E1D6239DAE3D0066BF7B /* OreganoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B25E1AD239DAE3A0066BF7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Dean Silfen";
+				TargetAttributes = {
+					7B25E1B4239DAE3A0066BF7B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					7B25E1CA239DAE3D0066BF7B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7B25E1B4239DAE3A0066BF7B;
+					};
+					7B25E1D5239DAE3D0066BF7B = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7B25E1B4239DAE3A0066BF7B;
+					};
+				};
+			};
+			buildConfigurationList = 7B25E1B0239DAE3A0066BF7B /* Build configuration list for PBXProject "Oregano" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B25E1AC239DAE3A0066BF7B;
+			productRefGroup = 7B25E1B6239DAE3A0066BF7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B25E1B4239DAE3A0066BF7B /* Oregano */,
+				7B25E1CA239DAE3D0066BF7B /* OreganoTests */,
+				7B25E1D5239DAE3D0066BF7B /* OreganoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B25E1B3239DAE3A0066BF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25E1C5239DAE3C0066BF7B /* LaunchScreen.storyboard in Resources */,
+				7B25E1C2239DAE3C0066BF7B /* Assets.xcassets in Resources */,
+				7B25E1C0239DAE3A0066BF7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1C9239DAE3D0066BF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1D4239DAE3D0066BF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B25E1B1239DAE3A0066BF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25E1BD239DAE3A0066BF7B /* ViewController.swift in Sources */,
+				7B25E1B9239DAE3A0066BF7B /* AppDelegate.swift in Sources */,
+				7B25E1BB239DAE3A0066BF7B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1C7239DAE3D0066BF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25E1D0239DAE3D0066BF7B /* OreganoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25E1D2239DAE3D0066BF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25E1DB239DAE3D0066BF7B /* OreganoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B25E1CD239DAE3D0066BF7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B25E1B4239DAE3A0066BF7B /* Oregano */;
+			targetProxy = 7B25E1CC239DAE3D0066BF7B /* PBXContainerItemProxy */;
+		};
+		7B25E1D8239DAE3D0066BF7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B25E1B4239DAE3A0066BF7B /* Oregano */;
+			targetProxy = 7B25E1D7239DAE3D0066BF7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B25E1BE239DAE3A0066BF7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B25E1BF239DAE3A0066BF7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B25E1C4239DAE3C0066BF7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B25E1DD239DAE3D0066BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B25E1DE239DAE3D0066BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B25E1E0239DAE3D0066BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = Oregano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.Oregano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B25E1E1239DAE3D0066BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = Oregano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.Oregano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B25E1E3239DAE3D0066BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = OreganoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.OreganoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oregano.app/Oregano";
+			};
+			name = Debug;
+		};
+		7B25E1E4239DAE3D0066BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = OreganoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.OreganoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oregano.app/Oregano";
+			};
+			name = Release;
+		};
+		7B25E1E6239DAE3D0066BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = OreganoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.OreganoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oregano;
+			};
+			name = Debug;
+		};
+		7B25E1E7239DAE3D0066BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRNGV5PHUG;
+				INFOPLIST_FILE = OreganoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.silfen.OreganoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Oregano;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B25E1B0239DAE3A0066BF7B /* Build configuration list for PBXProject "Oregano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25E1DD239DAE3D0066BF7B /* Debug */,
+				7B25E1DE239DAE3D0066BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B25E1DF239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "Oregano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25E1E0239DAE3D0066BF7B /* Debug */,
+				7B25E1E1239DAE3D0066BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B25E1E2239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "OreganoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25E1E3239DAE3D0066BF7B /* Debug */,
+				7B25E1E4239DAE3D0066BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B25E1E5239DAE3D0066BF7B /* Build configuration list for PBXNativeTarget "OreganoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25E1E6239DAE3D0066BF7B /* Debug */,
+				7B25E1E7239DAE3D0066BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B25E1AD239DAE3A0066BF7B /* Project object */;
+}
