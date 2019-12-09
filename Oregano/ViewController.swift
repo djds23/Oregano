@@ -8,12 +8,13 @@
 
 import UIKit
 import SwiftUI
+import Yams
 
-struct Recipe {
-    var title: String?
+struct Recipe: Codable {
+    var name: String?
     /// Separated by \n newlines
     var ingredients: String?
-    var instructions: String?
+    var directions: String?
 }
 
 enum EditingState: CaseIterable {
@@ -56,11 +57,11 @@ enum EditingState: CaseIterable {
     var keypath: WritableKeyPath<Recipe, String?> {
         switch self {
         case .title:
-            return \Recipe.title
+            return \Recipe.name
         case .ingredients:
             return \Recipe.ingredients
         case .instructions:
-            return \Recipe.instructions
+            return \Recipe.directions
         }
     }
 }
@@ -133,13 +134,22 @@ class ViewController: UIViewController {
         segmentView.selectedSegmentIndex = EditingState.default.segment
         
         analysisView.delegate = self
-        let barButtonItem = UIBarButtonItem(
+        let photoBarButtonItem = UIBarButtonItem(
             title: "📷",
             style: .plain,
             target: self,
             action: #selector(showPhotoPicker(sender:))
         )
-        navigationItem.rightBarButtonItem = barButtonItem
+
+        let exportBarButtonItem = UIBarButtonItem(
+            title: "Export",
+            style: .plain,
+            target: self,
+            action: #selector(exportFile(sender:))
+        )
+
+        navigationItem.leftBarButtonItem = exportBarButtonItem
+        navigationItem.rightBarButtonItem = photoBarButtonItem
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -155,6 +165,18 @@ class ViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
 
+    @objc
+    func exportFile(sender: Any) {
+        let codable = Store.shared.currentState.recipe
+        if let encoded = try? YAMLEncoder().encode(codable) {
+            let activityController = UIActivityViewController(
+                activityItems: [encoded],
+                applicationActivities: nil
+            )
+            present(activityController, animated: true, completion: nil)
+        }
+    }
+    
     @objc
     func segmentChanged(sender: Any) {
         let currentSegment = segmentView.selectedSegmentIndex

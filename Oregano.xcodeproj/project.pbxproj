@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		7B25E1D0239DAE3D0066BF7B /* OreganoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1CF239DAE3D0066BF7B /* OreganoTests.swift */; };
 		7B25E1DB239DAE3D0066BF7B /* OreganoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */; };
 		7B25E1E9239DBA8C0066BF7B /* PhotoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */; };
+		7B25E1EE239DD56F0066BF7B /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 7B25E1ED239DD56F0066BF7B /* Yams */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B25E1EE239DD56F0066BF7B /* Yams in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = Oregano;
+			packageProductDependencies = (
+				7B25E1ED239DD56F0066BF7B /* Yams */,
+			);
 			productName = Oregano;
 			productReference = 7B25E1B5239DAE3A0066BF7B /* Oregano.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 7B25E1AC239DAE3A0066BF7B;
+			packageReferences = (
+				7B25E1EC239DD56F0066BF7B /* XCRemoteSwiftPackageReference "Yams" */,
+			);
 			productRefGroup = 7B25E1B6239DAE3A0066BF7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -594,6 +602,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B25E1EC239DD56F0066BF7B /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B25E1ED239DD56F0066BF7B /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B25E1EC239DD56F0066BF7B /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B25E1AD239DAE3A0066BF7B /* Project object */;
 }
