@@ -17,6 +17,9 @@
 		7B25E1DB239DAE3D0066BF7B /* OreganoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */; };
 		7B25E1E9239DBA8C0066BF7B /* PhotoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */; };
 		7B25E1EE239DD56F0066BF7B /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 7B25E1ED239DD56F0066BF7B /* Yams */; };
+		7B25E1F0239DDA010066BF7B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1EF239DDA010066BF7B /* Store.swift */; };
+		7B25E1F2239DDA270066BF7B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1F1239DDA270066BF7B /* State.swift */; };
+		7B25E1F4239DDA380066BF7B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1F3239DDA380066BF7B /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OreganoUITests.swift; sourceTree = "<group>"; };
 		7B25E1DC239DAE3D0066BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnalysis.swift; sourceTree = "<group>"; };
+		7B25E1EF239DDA010066BF7B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7B25E1F1239DDA270066BF7B /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7B25E1F3239DDA380066BF7B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,9 @@
 				7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */,
 				7B25E1C6239DAE3C0066BF7B /* Info.plist */,
 				7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */,
+				7B25E1EF239DDA010066BF7B /* Store.swift */,
+				7B25E1F1239DDA270066BF7B /* State.swift */,
+				7B25E1F3239DDA380066BF7B /* Action.swift */,
 			);
 			path = Oregano;
 			sourceTree = "<group>";
@@ -270,10 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B25E1F0239DDA010066BF7B /* Store.swift in Sources */,
 				7B25E1E9239DBA8C0066BF7B /* PhotoAnalysis.swift in Sources */,
 				7B25E1BD239DAE3A0066BF7B /* ViewController.swift in Sources */,
 				7B25E1B9239DAE3A0066BF7B /* AppDelegate.swift in Sources */,
+				7B25E1F4239DDA380066BF7B /* Action.swift in Sources */,
 				7B25E1BB239DAE3A0066BF7B /* SceneDelegate.swift in Sources */,
+				7B25E1F2239DDA270066BF7B /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
