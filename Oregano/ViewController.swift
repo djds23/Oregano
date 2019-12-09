@@ -9,19 +9,130 @@
 import UIKit
 import SwiftUI
 
+struct Recipe {
+    var title: String?
+    /// Separated by \n newlines
+    var ingredients: String?
+    var instructions: String?
+}
+
+enum EditingState: CaseIterable {
+    case title
+    case ingredients
+    case instructions
+    
+    static var `default`: EditingState {
+        .title
+    }
+    
+    static var statesByIndex: [Int: EditingState] {
+        Dictionary(
+            uniqueKeysWithValues: EditingState.allCases.map { ($0.segment, $0) }
+        )
+    }
+
+    var segment: Int {
+        switch self {
+        case .title:
+            return 0
+        case .ingredients:
+            return 1
+        case .instructions:
+            return 2
+        }
+    }
+    
+    var text: String {
+        switch self {
+        case .title:
+            return "Title"
+        case .ingredients:
+            return "Ingredients"
+        case .instructions:
+            return "Instructions"
+        }
+    }
+    
+    var keypath: WritableKeyPath<Recipe, String?> {
+        switch self {
+        case .title:
+            return \Recipe.title
+        case .ingredients:
+            return \Recipe.ingredients
+        case .instructions:
+            return \Recipe.instructions
+        }
+    }
+}
+
+enum Action {
+    case updateText(String?)
+    case updateEditingState(EditingState)
+}
+
+struct State {
+    var recipe: Recipe
+    var editingState: EditingState
+}
+
+class Store {
+    
+    static var shared = Store()
+
+    var currentState = State(
+        recipe: Recipe(),
+        editingState: .default
+    )
+    
+    var currentText: String? {
+        currentState.recipe[keyPath: currentState.editingState.keypath]
+    }
+
+    func update(action: Action) {
+        switch action {
+        case let .updateText(string):
+            let keyPath = currentState.editingState.keypath
+            currentState.recipe[keyPath: keyPath] = string
+        case let .updateEditingState(state):
+            currentState.editingState = state
+        }
+    }
+}
+
 class ViewController: UIViewController {
     let analysisView = UITextView()
+    let segmentView = UISegmentedControl(items: EditingState.allCases.map { $0.text })
+    let mainStack = UIStackView()
     var currentAnalysis: PhotoAnalysis?
     override func viewDidLoad() {
         super.viewDidLoad()
-        analysisView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(analysisView)
+        mainStack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(mainStack)
         NSLayoutConstraint.activate([
-            analysisView.topAnchor.constraint(equalTo: view.topAnchor),
-            analysisView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            analysisView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            analysisView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            mainStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            mainStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            mainStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            mainStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
+        
+        segmentView.translatesAutoresizingMaskIntoConstraints = false
+        analysisView.translatesAutoresizingMaskIntoConstraints = false
+        mainStack.axis = .vertical
+        
+        [
+            segmentView,
+            analysisView
+        ].forEach { mainStack.addArrangedSubview($0) }
+
+        segmentView.addTarget(
+            self,
+            action: #selector(segmentChanged(sender:)),
+            for: .valueChanged
+        )
+
+        segmentView.selectedSegmentIndex = EditingState.default.segment
+        
+        analysisView.delegate = self
         let barButtonItem = UIBarButtonItem(
             title: "📷",
             style: .plain,
@@ -33,7 +144,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        analysisView.text = "okay"
+        analysisView.text = Store.shared.currentText
     }
 
     @objc
@@ -44,6 +155,14 @@ class ViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
 
+    @objc
+    func segmentChanged(sender: Any) {
+        let currentSegment = segmentView.selectedSegmentIndex
+        if let state = EditingState.statesByIndex[currentSegment] {
+            Store.shared.update(action: .updateEditingState(state))
+        }
+        analysisView.text = Store.shared.currentText
+    }
 }
 
 extension ViewController: UIImagePickerControllerDelegate {
@@ -55,10 +174,17 @@ extension ViewController: UIImagePickerControllerDelegate {
         try? currentAnalysis?.analysis { [weak self] (string) in
             DispatchQueue.main.async { [weak self] in
                 self?.currentAnalysis = nil
-                self?.analysisView.text = string ?? "N/A"
+                Store.shared.update(action: .updateText(string))
+                self?.analysisView.text = Store.shared.currentText
                 picker.dismiss(animated: true, completion: nil)
             }
         }
+    }
+}
+
+extension ViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        Store.shared.update(action: .updateText(textView.text))
     }
 }
 
