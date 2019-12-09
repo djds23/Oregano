@@ -15,6 +15,7 @@
 		7B25E1C5239DAE3C0066BF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */; };
 		7B25E1D0239DAE3D0066BF7B /* OreganoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1CF239DAE3D0066BF7B /* OreganoTests.swift */; };
 		7B25E1DB239DAE3D0066BF7B /* OreganoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */; };
+		7B25E1E9239DBA8C0066BF7B /* PhotoAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7B25E1D6239DAE3D0066BF7B /* OreganoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OreganoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B25E1DA239DAE3D0066BF7B /* OreganoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OreganoUITests.swift; sourceTree = "<group>"; };
 		7B25E1DC239DAE3D0066BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnalysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7B25E1C1239DAE3C0066BF7B /* Assets.xcassets */,
 				7B25E1C3239DAE3C0066BF7B /* LaunchScreen.storyboard */,
 				7B25E1C6239DAE3C0066BF7B /* Info.plist */,
+				7B25E1E8239DBA8C0066BF7B /* PhotoAnalysis.swift */,
 			);
 			path = Oregano;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B25E1E9239DBA8C0066BF7B /* PhotoAnalysis.swift in Sources */,
 				7B25E1BD239DAE3A0066BF7B /* ViewController.swift in Sources */,
 				7B25E1B9239DAE3A0066BF7B /* AppDelegate.swift in Sources */,
 				7B25E1BB239DAE3A0066BF7B /* SceneDelegate.swift in Sources */,
